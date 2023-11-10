@@ -7,11 +7,20 @@
     */
 
     //Entrada
-
+    let string = (prompt(`Informe uma palavra:`));
+    let vogais = [];
 
     //Processamento
+    function identvogal(string) {
+        for (item of string) {
+            if(item == "A" || item == "E" || item == "I" || item == "O" || item == "U") {
+                vogais.push(item)
 
+            }
+        }
+        document.write(`A palavra informada tem ${vogais.length} vogais.`);
+    }
 
     //Saída
-
+    identvogal(string);
 </script>

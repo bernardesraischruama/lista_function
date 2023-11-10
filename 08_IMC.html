@@ -6,11 +6,15 @@
     */
 
     //Entrada
-
+    function calculo(IMC) {
+        alert(`O seu IMC é: ${IMC.toFixed(1).replace('.','.')}`);
+    }
 
     //Processamento
-
+    let peso = Number(prompt(`Informe o seu peso:`));
+    let altura = Number((prompt`informe a sua altura`).replace('.','.'));
+    let IMC = peso / (altura * altura);
 
     //Saída
-
+    calculo(IMC);
 </script>

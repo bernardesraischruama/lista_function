@@ -6,11 +6,15 @@
     */
 
     //Entrada
-
+    let graus = Number(prompt(`Informe os graus em Fahrenheit:`));
 
     //Processamento
+    function calculo(fahrenheit) {
+        const conversao = (fahrenheit - 32) * 5 / 9;
+        return conversao;
+    }
 
-
+    const resultado = calculo(graus);
     //Saída
-
+    alert(`Graus em fahrenheit: ${resultado}`);
 </script>
